@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Bankey
 //
-//  Created by Steve Moody on 5/23/23.
+//  Created by Steve Moody on 5/23/23ºººººº
 //
 
 import UIKit
@@ -16,7 +16,7 @@ var window: UIWindow?
                      [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        window?.backgroundColor = .blue
+        window?.backgroundColor = .systemBackground
         window?.rootViewController = LoginViewController()
         
         return true
