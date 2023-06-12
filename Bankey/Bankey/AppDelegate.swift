@@ -7,6 +7,8 @@
 
 import UIKit
 
+let appColor: UIColor = .systemTeal
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -19,6 +21,7 @@ var window: UIWindow?
     let onboardingCintainerViewController = OnboardingContainerViewController()
     
     let dummyViewController = DummyViewController()
+    let mainViewController = MainViewController()
     
     
     
@@ -30,9 +33,11 @@ var window: UIWindow?
         loginViewController.delegate = self
         onboardingCintainerViewController.delegate = self
         dummyViewController.logoutDelegate = self
-        window?.rootViewController = loginViewController
+        window?.rootViewController = mainViewController
         // window?.rootViewController = AccountSummaryViewController
         //window?.rootViewController = OnboardingContainerViewController()
+        
+        mainViewController.selectedIndex = 1
 //        window?.rootViewController = OnboardingViewController(heroImageName: "delorean",
 //                                                              titleText: "Bankey is faster, easier to use and has a brand new look and feel that will make you feel like you are back in the 80s")
 //

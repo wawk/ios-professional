@@ -15,6 +15,8 @@
 		B21FDEAE2A262E7800A84D5E /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21FDEAD2A262E7800A84D5E /* OnboardingContainerViewController.swift */; };
 		B2262E372A31204A00F3A81C /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2262E362A31204A00F3A81C /* DummyViewController.swift */; };
 		B2262E3A2A32148400F3A81C /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2262E392A32148400F3A81C /* LocalState.swift */; };
+		B2262E3C2A3351D600F3A81C /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2262E3B2A3351D600F3A81C /* UIViewController+Utils.swift */; };
+		B2262E3E2A33566100F3A81C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2262E3D2A33566100F3A81C /* MainViewController.swift */; };
 		B2E67C412A2769F80017023C /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E67C402A2769F80017023C /* OnboardingViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +31,8 @@
 		B21FDEAD2A262E7800A84D5E /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
 		B2262E362A31204A00F3A81C /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
 		B2262E392A32148400F3A81C /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
+		B2262E3B2A3351D600F3A81C /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
+		B2262E3D2A33566100F3A81C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B2E67C402A2769F80017023C /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,9 +66,11 @@
 		B21FDE932A1CE47600A84D5E /* Bankey */ = {
 			isa = PBXGroup;
 			children = (
-				B2262E382A32144F00F3A81C /* Utils */,
-				B21FDEAC2A262DF200A84D5E /* Onboarding */,
+				B2262E3D2A33566100F3A81C /* MainViewController.swift */,
+				B21FDE942A1CE47600A84D5E /* AppDelegate.swift */,
 				B21FDEA92A1CEDB000A84D5E /* Login */,
+				B21FDEAC2A262DF200A84D5E /* Onboarding */,
+				B2262E382A32144F00F3A81C /* Utils */,
 				B21FDEA82A1CED1600A84D5E /* Files */,
 			);
 			path = Bankey;
@@ -83,7 +89,6 @@
 		B21FDEA92A1CEDB000A84D5E /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				B21FDE942A1CE47600A84D5E /* AppDelegate.swift */,
 				B21FDE982A1CE47600A84D5E /* LoginViewController.swift */,
 				B21FDEAA2A1CEE1400A84D5E /* LoginView.swift */,
 				B2262E362A31204A00F3A81C /* DummyViewController.swift */,
@@ -104,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				B2262E392A32148400F3A81C /* LocalState.swift */,
+				B2262E3B2A3351D600F3A81C /* UIViewController+Utils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -178,11 +184,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2262E3C2A3351D600F3A81C /* UIViewController+Utils.swift in Sources */,
 				B21FDEAB2A1CEE1400A84D5E /* LoginView.swift in Sources */,
 				B2262E3A2A32148400F3A81C /* LocalState.swift in Sources */,
 				B2262E372A31204A00F3A81C /* DummyViewController.swift in Sources */,
 				B21FDE992A1CE47600A84D5E /* LoginViewController.swift in Sources */,
 				B2E67C412A2769F80017023C /* OnboardingViewController.swift in Sources */,
+				B2262E3E2A33566100F3A81C /* MainViewController.swift in Sources */,
 				B21FDE952A1CE47600A84D5E /* AppDelegate.swift in Sources */,
 				B21FDEAE2A262E7800A84D5E /* OnboardingContainerViewController.swift in Sources */,
 			);
