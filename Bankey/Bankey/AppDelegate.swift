@@ -33,8 +33,8 @@ var window: UIWindow?
         loginViewController.delegate = self
         onboardingCintainerViewController.delegate = self
         dummyViewController.logoutDelegate = self
-        window?.rootViewController = mainViewController
-        // window?.rootViewController = AccountSummaryViewController
+        // window?.rootViewController = mainViewController()
+         window?.rootViewController = AccountSummaryViewController()
         //window?.rootViewController = OnboardingContainerViewController()
         
         mainViewController.selectedIndex = 1
