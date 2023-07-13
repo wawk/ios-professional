@@ -20,7 +20,7 @@ var window: UIWindow?
     
     let onboardingCintainerViewController = OnboardingContainerViewController()
     
-    let dummyViewController = DummyViewController()
+
     let mainViewController = MainViewController()
     
     
@@ -32,19 +32,16 @@ var window: UIWindow?
         window?.backgroundColor = .systemBackground
         loginViewController.delegate = self
         onboardingCintainerViewController.delegate = self
-        dummyViewController.logoutDelegate = self
-        // window?.rootViewController = mainViewController()
-         window?.rootViewController = AccountSummaryViewController()
-        //window?.rootViewController = OnboardingContainerViewController()
         
-        mainViewController.selectedIndex = 1
-//        window?.rootViewController = OnboardingViewController(heroImageName: "delorean",
-//                                                              titleText: "Bankey is faster, easier to use and has a brand new look and feel that will make you feel like you are back in the 80s")
-//
+        let vc = mainViewController
+        vc.setStatusBar()
         
+        UINavigationBar.appearance().isTranslucent = false
+        UINavigationBar.appearance().backgroundColor = appColor
         
-        
+        window?.rootViewController = vc
         return true
+        
     }
 
 }
@@ -69,7 +66,6 @@ extension AppDelegate {
 extension AppDelegate: LoginViewControllerDelegate {
     func didLogin() {
         if LocalState.hasOnBoarded{
-            setRootViewController(dummyViewController)
         } else {
             setRootViewController(onboardingCintainerViewController)
         }
@@ -80,7 +76,8 @@ extension AppDelegate: LoginViewControllerDelegate {
 extension AppDelegate: OnboardingContainerViewControllerDelegate {
     func didFinishOnboarding() {
         LocalState.hasOnBoarded = true
-        setRootViewController(dummyViewController)
+        setRootViewController(mainViewController)
+   
     }
 }
     

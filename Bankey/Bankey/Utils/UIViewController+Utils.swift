@@ -10,23 +10,25 @@ import UIKit
 extension UIViewController {
     
     func setStatusBar() {
-        let navBarAppearance = UINavigationBarAppearance()
-        navBarAppearance.configureWithTransparentBackground()
-        navBarAppearance.backgroundColor = appColor
-        UINavigationBar.appearance().standardAppearance = navBarAppearance
+        let statusBarSize = UIApplication.shared.statusBarFrame.size
         
+        let frame = CGRect(origin: .zero, size: statusBarSize)
+        let statusbarView = UIView(frame: frame)
+        statusbarView.backgroundColor = appColor
+        view.addSubview(statusbarView)
+//
+    }
+    
+    func setNavBar(){
+        let navBarAppearance = UINavigationBarAppearance()
+                navBarAppearance.configureWithTransparentBackground()
+                navBarAppearance.backgroundColor = appColor
+                UINavigationBar.appearance().standardAppearance = navBarAppearance
+                
     }
     
     
-    // Deprecated ios13
-//    func setStatusBar() {
-//        let statusBarSize = UIApplication.shared.statusBarFrame.size
-//        let frame = CGRect(origin: .zero, size: statusBarSize)
-//        let statusBarView = UIView(frame: frame)
-//
-//        statusBarView.backgroundColor = appColor
-//        view.addSubview(statusBarView)
-//    }
+    
     func setTabBarImage(imageName: String, title: String){
         let configuration = UIImage.SymbolConfiguration(scale: .large)
         let image = UIImage(systemName: imageName, withConfiguration: configuration)
