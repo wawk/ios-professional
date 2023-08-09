@@ -23,6 +23,8 @@
 		B249BF122A6812FA007BFA3B /* NSNotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = B249BF112A6812FA007BFA3B /* NSNotificationName.swift */; };
 		B249BF142A681888007BFA3B /* UITextField+SecureToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B249BF132A681888007BFA3B /* UITextField+SecureToggle.swift */; };
 		B249BF172A77DF2F007BFA3B /* ShakeyBellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B249BF162A77DF2F007BFA3B /* ShakeyBellView.swift */; };
+		B249BF192A7D24CA007BFA3B /* Date+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B249BF182A7D24CA007BFA3B /* Date+Utils.swift */; };
+		B249BF1B2A7D2785007BFA3B /* AccountSummaryViewController+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B249BF1A2A7D2785007BFA3B /* AccountSummaryViewController+Networking.swift */; };
 		B2B464D02A56F5AC005B5813 /* Decimal+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B464CF2A56F5AC005B5813 /* Decimal+Utils.swift */; };
 		B2B464D22A56F6F7005B5813 /* CurrencyFormater.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B464D12A56F6F7005B5813 /* CurrencyFormater.swift */; };
 		B2D890D22A5D941000316F80 /* CurrencyFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D890D12A5D941000316F80 /* CurrencyFormatterTests.swift */; };
@@ -58,6 +60,8 @@
 		B249BF112A6812FA007BFA3B /* NSNotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNotificationName.swift; sourceTree = "<group>"; };
 		B249BF132A681888007BFA3B /* UITextField+SecureToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+SecureToggle.swift"; sourceTree = "<group>"; };
 		B249BF162A77DF2F007BFA3B /* ShakeyBellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeyBellView.swift; sourceTree = "<group>"; };
+		B249BF182A7D24CA007BFA3B /* Date+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Utils.swift"; sourceTree = "<group>"; };
+		B249BF1A2A7D2785007BFA3B /* AccountSummaryViewController+Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountSummaryViewController+Networking.swift"; sourceTree = "<group>"; };
 		B2B464CF2A56F5AC005B5813 /* Decimal+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decimal+Utils.swift"; sourceTree = "<group>"; };
 		B2B464D12A56F6F7005B5813 /* CurrencyFormater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormater.swift; sourceTree = "<group>"; };
 		B2D890C82A5D938500316F80 /* BankeyUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankeyUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,6 +157,7 @@
 				B249BF132A681888007BFA3B /* UITextField+SecureToggle.swift */,
 				B2B464D12A56F6F7005B5813 /* CurrencyFormater.swift */,
 				B249BF112A6812FA007BFA3B /* NSNotificationName.swift */,
+				B249BF182A7D24CA007BFA3B /* Date+Utils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -161,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				B2262E402A38AC8300F3A81C /* AccountSummaryViewController.swift */,
+				B249BF1A2A7D2785007BFA3B /* AccountSummaryViewController+Networking.swift */,
 				B2262E462A41DD6A00F3A81C /* Header */,
 				B2262E472A41DDE100F3A81C /* Cells */,
 			);
@@ -308,6 +314,8 @@
 				B2262E3A2A32148400F3A81C /* LocalState.swift in Sources */,
 				B2262E432A39EBC900F3A81C /* AccountSummaryHeaderView.swift in Sources */,
 				B2B464D02A56F5AC005B5813 /* Decimal+Utils.swift in Sources */,
+				B249BF192A7D24CA007BFA3B /* Date+Utils.swift in Sources */,
+				B249BF1B2A7D2785007BFA3B /* AccountSummaryViewController+Networking.swift in Sources */,
 				B249BF142A681888007BFA3B /* UITextField+SecureToggle.swift in Sources */,
 				B21FDE992A1CE47600A84D5E /* LoginViewController.swift in Sources */,
 				B2262E492A41DF8C00F3A81C /* AccountSummaryCell.swift in Sources */,
