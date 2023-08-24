@@ -51,7 +51,7 @@ extension ShakeyBellView {
         buttonView.titleLabel?.font = UIFont.systemFont(ofSize: 13)
         buttonView.layer.cornerRadius = buttonHeight/2
         buttonView.setTitle("9", for: .normal)
-        buttonView.setTitleColor(.white, for: .normal)
+        buttonView.setTitleColor(.white, for:   .normal)
     }
     
     func layout() {
@@ -66,13 +66,13 @@ extension ShakeyBellView {
             imageView.widthAnchor.constraint(equalToConstant: 24)
         ])
         
-        // ButtonView
+        // Button
         NSLayoutConstraint.activate([
             buttonView.topAnchor.constraint(equalTo: imageView.topAnchor),
             buttonView.leadingAnchor.constraint(equalTo: imageView.trailingAnchor, constant: -9),
             buttonView.widthAnchor.constraint(equalToConstant: 16),
             buttonView.heightAnchor.constraint(equalToConstant: 16)
-        ])
+            ])
     }
 }
 
